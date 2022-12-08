@@ -1,0 +1,23 @@
+header a{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+header img{
+  width: 190px;
+}
+    
+.fa-arrow{
+  position: absolute;
+  left: 8%;
+  top: 45px;
+  font-size: 24px;
+  color: black;
+}
+
+@media only screen and (min-width: 768px){
+  header img{
+    width: 200px;
+  }
+}
+  

@@ -1,0 +1,14 @@
+{
+    "name": "ohmyfood",
+    "version": "1.0.0",
+    "description": "OpenClassRooms - Projet 3 - Ohmyfood",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./sass/main.scss:./css/main.css"
+    },
+    "author": "Gabriel",
+    "license": "ISC",
+    "dependencies": {
+      "sass": "^1.56.0"
+    }
+  }

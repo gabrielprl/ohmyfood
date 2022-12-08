@@ -1,0 +1,75 @@
+// All effects
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.top-page{
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fade-in 0.1s 500ms ease-out forwards;
+}
+.eat__sous-title{
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fade-in 0.3s 0.3s ease-out forwards;
+}
+
+.eat__container{
+  @include anim;
+}
+
+i.fa-coeur-custom{
+  opacity: 0;
+  font-size: 25px;
+  position: relative;
+  left: -49.5px;
+}
+i.fa-coeur-custom:hover{
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+i.fa-heart-custom{
+  opacity: 0;
+  position: relative;
+  left: 40px;
+}
+i.fa-heart-custom:hover{
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+    @media screen and (max-width: 992px){
+      i.fa-heart-custom{
+        opacity: 0;
+        position: relative;
+        left: 40px;
+      }
+      i.fa-heart-custom:hover{
+        background-color: #9356dc;
+        background-image: linear-gradient(45deg, #9356dc, #ff79da);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -moz-text-fill-color: transparent;
+        transition: all 300ms ease-in-out;
+        opacity: 1;
+      }
+    }

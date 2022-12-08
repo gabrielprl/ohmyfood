@@ -1,0 +1,23 @@
+.img-restaurant{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+  
+.button_commande{
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(356deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+  box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.2);
+  font-size: 18px;
+  padding: 0 50px;
+  height: 55px;
+  color: white;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+.position{
+  text-align: center;
+}

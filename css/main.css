@@ -1,0 +1,825 @@
+header a {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+header img {
+  width: 190px;
+}
+
+.fa-arrow {
+  position: absolute;
+  left: 8%;
+  top: 45px;
+  font-size: 24px;
+  color: black;
+}
+
+@media only screen and (min-width: 768px) {
+  header img {
+    width: 200px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: Shrikhand;
+  src: url(../assets/fonts/Shrikhand-Regular.ttf);
+}
+a {
+  text-decoration: none;
+  text-transform: none;
+}
+
+footer {
+  background: #3a3939;
+  padding: 20px 25px;
+  width: 100%;
+  height: 220px;
+}
+footer h3 {
+  text-align: left;
+  color: white;
+  font-family: Shrikhand;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+ul li a {
+  text-decoration: none;
+  text-transform: none;
+  line-height: 30px;
+  color: white;
+}
+
+.ft {
+  margin-left: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  footer {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+  footer h3 {
+    text-align: center;
+  }
+  ul li {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 992px) {
+  footer {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+  }
+  ul {
+    text-align: center;
+  }
+  ul li {
+    display: inline-block;
+    padding-top: 30px;
+  }
+  ul li a {
+    margin: 0 50px;
+  }
+}
+.container {
+  background: white;
+  margin-top: -45px;
+  border-top-right-radius: 45px;
+  border-top-left-radius: 45px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+.container .top-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 18px;
+}
+.container .title {
+  font-family: Shrikhand;
+  font-weight: 400;
+}
+
+.fa-coeur {
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+.eat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 45px;
+}
+.eat .eat__sous-title {
+  text-transform: uppercase;
+  color: rgba(70, 69, 69, 0.808);
+  padding-left: 15px;
+}
+.eat .eat__sous-title::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 2px;
+  background: #99E2D0;
+}
+.eat .eat__container {
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 0px 7px -2px #000000;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 92%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #000;
+}
+.eat .eat__container .eat__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.eat .eat__container .eat__cards .eat__title {
+  width: 80%;
+  padding: 10px 5px;
+  line-height: 25px;
+  padding-left: 15px;
+}
+.eat .eat__container .eat__cards .eat__title h2 {
+  font-size: 18px;
+  max-width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+}
+.eat .eat__container .eat__cards .eat__title h4 {
+  font-size: 16px;
+  font-weight: 400;
+  max-width: 85%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: left;
+}
+.eat .eat__container .eat__cards .eat__prise {
+  text-align: right;
+  width: 20%;
+  display: flex;
+  justify-content: end;
+  margin-top: auto;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  transition: all 450ms ease-in-out;
+}
+.eat .eat__container .eat__cards .eat__prise span {
+  font-weight: 700;
+  font-size: 15px;
+  margin-left: auto;
+  margin-top: -20px;
+  padding-right: 8px;
+}
+.eat .eat__container .eat__cards .eat__animation {
+  opacity: 0;
+  transition: all 0.8s;
+  position: absolute;
+  right: 0;
+  margin-right: -50px;
+  width: 15%;
+  height: 70px;
+  background-color: aqua;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+.eat .eat__container .eat__cards .eat__animation i {
+  position: relative;
+  transition: rotate 900ms;
+  top: 25px;
+  font-size: 15px;
+  background: #fff;
+  padding: 3.5px 4.5px;
+  border-radius: 100%;
+  color: #99E2D0;
+}
+.eat .eat__container:hover .eat__animation {
+  background: #99E2D0;
+  opacity: 1;
+  margin: 0;
+  transition: all 0.8s;
+}
+.eat .eat__container:hover .eat__animation i {
+  rotate: -360deg;
+}
+.eat .eat__container:hover .eat__prise {
+  width: 5%;
+  transition: all 500ms ease-in-out;
+}
+
+button {
+  border: none;
+  background: whitesmoke;
+}
+
+@media only screen and (min-width: 768px) {
+  .top-page {
+    margin: 0 115px;
+  }
+  .eat {
+    padding: 0 100px;
+  }
+  .eat .eat__sous-title {
+    margin-left: 20px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .top-page {
+    margin: 0 25%;
+  }
+  .eat {
+    padding: 0 24%;
+  }
+  .eat .eat__sous-title {
+    margin-left: 30px;
+  }
+}
+/*First Mobile */
+.top_infos {
+  background: rgba(128, 128, 128, 0.068);
+}
+.top_infos .localisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  height: 50px;
+  background: rgba(177, 177, 177, 0.1);
+  box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.04);
+}
+.top_infos .title_one {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 40px;
+  padding: 0 50px;
+  width: 100%;
+}
+.top_infos p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.top_infos .position {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.desciption {
+  width: 100%;
+  padding: 0 35px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.button_explore {
+  border: none;
+  border-radius: 50px;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(356deg, rgb(147, 86, 220) 10%, rgb(255, 121, 218) 100%);
+  box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.2);
+  font-size: 20px;
+  padding: 0 20px;
+  height: 60px;
+  color: white;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.title_common {
+  text-align: left;
+  margin-top: 70px;
+  margin-left: 50px;
+  font-size: 28px;
+}
+
+.instruction {
+  display: flex;
+  margin-right: 20%;
+  flex-direction: column;
+  width: 85%;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+
+.same {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  border-radius: 20px;
+  margin-left: 40px;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 100%;
+  height: 75px;
+  gap: 18px;
+  box-shadow: 0px 0px 7px -3px #000000;
+  background: white;
+}
+.same:hover {
+  background-color: rgba(146, 86, 220, 0.1529411765);
+}
+.same:hover .fa-color {
+  color: #9356DC;
+}
+
+.instruction span {
+  background: #9356DC;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 100%;
+  margin-top: auto;
+  position: absolute;
+  left: 22px;
+}
+
+.restaurants_cards {
+  background: rgba(128, 128, 128, 0.1);
+  padding-top: 1px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 70px;
+  width: 100%;
+}
+.container-cards a {
+  text-decoration: none;
+  color: #000;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 9px -3px #000000;
+  width: 88%;
+}
+
+.settings {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+figcaption {
+  padding: 15px 15px;
+}
+figcaption h4 {
+  font-size: 20px;
+  margin-top: 5px;
+  font-weight: 400;
+}
+figcaption h2 {
+  font-size: 20px;
+}
+figcaption span {
+  background: #99E2D0;
+  color: #228139;
+  font-weight: 700;
+  float: right;
+  padding: 6px 10px;
+  margin-top: -250px;
+}
+figcaption .fa-heart {
+  float: right;
+  margin-right: 15px;
+  padding-top: 2px;
+  font-size: 25px;
+}
+
+@media only screen and (min-width: 768px) {
+  .localisation {
+    height: 65px;
+  }
+  .desciption {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .title_common {
+    font-size: 26px;
+  }
+  .instruction {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  .instruction span {
+    background: #9356DC;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 100%;
+    position: absolute;
+    left: 22.5%;
+  }
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 50%);
+    padding-bottom: 70px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .instruction span {
+    position: relative;
+    left: -17px;
+    margin-bottom: auto;
+  }
+  .instruction {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 100%;
+    margin-left: 0;
+  }
+  .container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25%);
+  }
+  .title_common {
+    text-align: left;
+    font-size: 22px;
+  }
+  .restaurants_cards .title_common {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 24px;
+  }
+  .same {
+    margin-left: 20px;
+    padding-left: 0px;
+    width: 20%;
+    font-size: 18px;
+  }
+  figure {
+    width: 90%;
+  }
+}
+.img-restaurant {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.button_commande {
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(356deg, rgb(147, 86, 220) 10%, rgb(255, 121, 218) 100%);
+  box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.2);
+  font-size: 18px;
+  padding: 0 50px;
+  height: 55px;
+  color: white;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.position {
+  text-align: center;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.top-page {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fade-in 0.1s 500ms ease-out forwards;
+}
+
+.eat__sous-title {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fade-in 0.3s 0.3s ease-out forwards;
+}
+
+.eat__container:nth-child(1) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(2) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(3) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(4) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(5) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(6) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(7) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(8) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(9) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(10) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(11) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(12) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(13) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(14) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(15) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(16) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(17) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(18) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat__container:nth-child(19) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 4.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+i.fa-coeur-custom {
+  opacity: 0;
+  font-size: 25px;
+  position: relative;
+  left: -49.5px;
+}
+
+i.fa-coeur-custom:hover {
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+i.fa-heart-custom {
+  opacity: 0;
+  position: relative;
+  left: 40px;
+}
+
+i.fa-heart-custom:hover {
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+  i.fa-heart-custom {
+    opacity: 0;
+    position: relative;
+    left: 40px;
+  }
+  i.fa-heart-custom:hover {
+    background-color: #9356dc;
+    background-image: linear-gradient(45deg, #9356dc, #ff79da);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 300ms ease-in-out;
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

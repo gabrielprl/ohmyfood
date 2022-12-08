@@ -1,0 +1,169 @@
+
+// Mobile First
+  .container{
+    background: white;
+    margin-top: -45px;
+    border-top-right-radius: 45px;
+    border-top-left-radius: 45px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    .top-page{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30px 18px;
+    }
+    .title{
+      font-family: Shrikhand;
+      font-weight: 400;
+    }
+  }
+  .fa-coeur{
+    font-size: 25px;
+    padding-right: 20px;
+  }
+  .eat{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 45px;
+    .eat__sous-title{
+      text-transform: uppercase;
+      color: rgba(70, 69, 69, 0.808);
+      padding-left: 15px;
+      &::after{
+        content: "";
+        position: absolute;
+        display: block;
+        width: 48px; 
+        height: 2px;
+        background: #99E2D0;
+      }
+    }
+    .eat__container{
+      text-align: center;
+      position: relative;
+      box-shadow: 0px 0px 7px -2px #000000;
+      border-radius: 20px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 92%;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      color: #000;
+      .eat__cards{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .eat__title{
+          width: 80%;
+          padding: 10px 5px;
+          line-height: 25px;
+          padding-left: 15px;
+          h2{
+            font-size: 18px;
+            max-width: 85%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: left;
+          }
+          h4{
+            font-size: 16px;
+            font-weight: 400;
+            max-width: 85%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: left;
+          }
+        }
+        .eat__prise{
+          text-align: right;
+          width: 20%;
+          display: flex;
+          justify-content: end;
+          margin-top: auto;
+          margin-right: 15px;
+          margin-bottom: 10px;
+          transition: all 450ms ease-in-out;
+          span{
+            font-weight: 700;
+            font-size: 15px;
+            margin-left: auto;
+            margin-top: -20px;
+            padding-right: 8px;
+          }
+        }
+        .eat__animation{
+          opacity: 0;
+          transition: all 0.8s;
+          position: absolute;
+          right: 0;
+          margin-right: -50px;
+          width: 15%;
+          height: 70px;
+          background-color: aqua;
+          border-top-right-radius: 18px;
+          border-bottom-right-radius: 18px;
+          i{
+            position: relative;
+            transition: rotate 900ms;
+            top: 25px;
+            font-size: 15px;
+            background: #fff;
+            padding: 3.5px 4.5px;
+            border-radius: 100%;
+            color: #99E2D0;
+          }
+        }
+      }
+      &:hover .eat__animation{
+        background: #99E2D0;
+        opacity: 1;
+        margin: 0;
+        transition: all 0.8s;
+      }
+      &:hover .eat__animation i{
+        rotate: -360deg;
+      }
+      &:hover .eat__prise{
+        width: 5%;
+        transition: all 500ms ease-in-out;
+      }
+    }
+  }
+  button{
+    border: none;
+    background: whitesmoke;
+  }
+
+// Tablette
+@media only screen and (min-width: 768px){
+  .top-page{
+    margin: 0 115px;
+  }
+  .eat{
+    padding: 0 100px;
+    .eat__sous-title{
+      margin-left: 20px;
+    }
+  }
+}
+
+// Dekstop
+@media only screen and (min-width: 992px){
+  .top-page{
+    margin: 0 25%;
+  }
+  .eat{
+    padding: 0 24%;
+    .eat__sous-title{
+      margin-left: 30px;
+    }
+  }
+}
