@@ -1,3 +1,76 @@
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.top-page {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fade-in 0.1s 500ms ease-out forwards;
+}
+
+.eat__sous-title {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: fade-in 0.3s 0.3s ease-out forwards;
+}
+
+i.fa-coeur-custom {
+  opacity: 0;
+  font-size: 25px;
+  position: relative;
+  left: -49.5px;
+}
+
+i.fa-coeur-custom:hover {
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+i.fa-heart-custom {
+  opacity: 0;
+  position: relative;
+  left: 40px;
+}
+
+i.fa-heart-custom:hover {
+  background-color: #9356dc;
+  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  transition: all 300ms ease-in-out;
+  opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+  i.fa-heart-custom {
+    opacity: 0;
+    position: relative;
+    left: 40px;
+  }
+  i.fa-heart-custom:hover {
+    background-color: #9356dc;
+    background-image: linear-gradient(45deg, #9356dc, #ff79da);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 300ms ease-in-out;
+    opacity: 1;
+  }
+}
 header a {
   display: flex;
   justify-content: center;
@@ -153,6 +226,234 @@ ul li a {
   overflow: hidden;
   color: #000;
 }
+.eat .eat__container:nth-child(1) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(2) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(3) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(4) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 0.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(5) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(6) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(7) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(8) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 1.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(9) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 1.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(10) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(11) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(12) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(13) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 2.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(14) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 2.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(15) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.1s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.3s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(16) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.3s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.5s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(17) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.7s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(18) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.7s;
+  animation-timing-function: ease-out;
+  animation-delay: 3.9s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+.eat .eat__container:nth-child(19) {
+  opacity: 0;
+  transform: translateY(-30px);
+  animation-name: fade-in;
+  animation-duration: 3.9s;
+  animation-timing-function: ease-out;
+  animation-delay: 4.1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
 .eat .eat__container .eat__cards {
   width: 100%;
   display: flex;
@@ -166,7 +467,6 @@ ul li a {
 }
 .eat .eat__container .eat__cards .eat__title h2 {
   font-size: 18px;
-  max-width: 85%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -175,7 +475,6 @@ ul li a {
 .eat .eat__container .eat__cards .eat__title h4 {
   font-size: 16px;
   font-weight: 400;
-  max-width: 85%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -189,7 +488,7 @@ ul li a {
   margin-top: auto;
   margin-right: 15px;
   margin-bottom: 10px;
-  transition: all 450ms ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .eat .eat__container .eat__cards .eat__prise span {
   font-weight: 700;
@@ -206,7 +505,6 @@ ul li a {
   margin-right: -50px;
   width: 15%;
   height: 70px;
-  background-color: aqua;
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
 }
@@ -231,7 +529,7 @@ ul li a {
 }
 .eat .eat__container:hover .eat__prise {
   width: 5%;
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 button {
@@ -517,309 +815,6 @@ figcaption .fa-heart {
 
 .position {
   text-align: center;
-}
-
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-.top-page {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: fade-in 0.1s 500ms ease-out forwards;
-}
-
-.eat__sous-title {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation: fade-in 0.3s 0.3s ease-out forwards;
-}
-
-.eat__container:nth-child(1) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 0.3s;
-  animation-timing-function: ease-out;
-  animation-delay: 0.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(2) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 0.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 0.7s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(3) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 0.7s;
-  animation-timing-function: ease-out;
-  animation-delay: 0.9s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(4) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 0.9s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.1s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(5) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 1.1s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.3s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(6) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 1.3s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(7) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.7s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(8) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 1.7s;
-  animation-timing-function: ease-out;
-  animation-delay: 1.9s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(9) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 1.9s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.1s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(10) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 2.1s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.3s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(11) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 2.3s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(12) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 2.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.7s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(13) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 2.7s;
-  animation-timing-function: ease-out;
-  animation-delay: 2.9s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(14) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 2.9s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.1s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(15) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 3.1s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.3s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(16) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 3.3s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.5s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(17) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 3.5s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.7s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(18) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 3.7s;
-  animation-timing-function: ease-out;
-  animation-delay: 3.9s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-.eat__container:nth-child(19) {
-  opacity: 0;
-  transform: translateY(-30px);
-  animation-name: fade-in;
-  animation-duration: 3.9s;
-  animation-timing-function: ease-out;
-  animation-delay: 4.1s;
-  animation-iteration-count: 1;
-  animation-direction: normal;
-  animation-fill-mode: forwards;
-  animation-play-state: running;
-}
-
-i.fa-coeur-custom {
-  opacity: 0;
-  font-size: 25px;
-  position: relative;
-  left: -49.5px;
-}
-
-i.fa-coeur-custom:hover {
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #9356dc, #ff79da);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  transition: all 300ms ease-in-out;
-  opacity: 1;
-}
-
-i.fa-heart-custom {
-  opacity: 0;
-  position: relative;
-  left: 40px;
-}
-
-i.fa-heart-custom:hover {
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #9356dc, #ff79da);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  transition: all 300ms ease-in-out;
-  opacity: 1;
-}
-
-@media screen and (max-width: 992px) {
-  i.fa-heart-custom {
-    opacity: 0;
-    position: relative;
-    left: 40px;
-  }
-  i.fa-heart-custom:hover {
-    background-color: #9356dc;
-    background-image: linear-gradient(45deg, #9356dc, #ff79da);
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    transition: all 300ms ease-in-out;
-    opacity: 1;
-  }
 }
 
 /*# sourceMappingURL=main.css.map */

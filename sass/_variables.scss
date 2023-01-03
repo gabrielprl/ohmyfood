@@ -1,16 +1,3 @@
-@mixin anim {
-    @for $i from 1 to 20 {
-        &:nth-child(#{$i}){
-            opacity: 0;
-            transform: translateY(-30px);
-            animation-name: fade-in;
-            animation-duration: 0.1s + 0.2s * $i;
-            animation-timing-function: ease-out;
-            animation-delay: 0.3s + 0.2s * $i;
-            animation-iteration-count: 1;
-            animation-direction: normal;
-            animation-fill-mode: forwards;
-            animation-play-state: running;
-        }
-    }
-}
+$primaire: #9356DC;
+$secondaire: #FF79DA;
+$tertiaire: #99E2D0;

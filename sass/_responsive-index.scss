@@ -85,13 +85,13 @@
   &:hover{
     background-color: #9256dc27;
     .fa-color{
-      color: #9356DC;
+      color: $primaire;
     }
   }
 }
 
 .instruction span{
-  background: #9356DC;
+  background: $primaire;
   color: white;
   padding: 5px 10px 5px 10px;
   border-radius: 100%;
@@ -182,7 +182,7 @@ figcaption{
     margin-bottom: 70px;
   }
   .instruction span{
-    background: #9356DC;
+    background: $primaire;
     color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 100%;

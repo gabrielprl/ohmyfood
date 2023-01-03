@@ -55,6 +55,7 @@
       flex-direction: column;
       overflow: hidden;
       color: #000;
+      @include anim;
       .eat__cards{
         width: 100%;
         display: flex;
@@ -66,7 +67,6 @@
           padding-left: 15px;
           h2{
             font-size: 18px;
-            max-width: 85%;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -75,7 +75,6 @@
           h4{
             font-size: 16px;
             font-weight: 400;
-            max-width: 85%;
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
@@ -90,7 +89,7 @@
           margin-top: auto;
           margin-right: 15px;
           margin-bottom: 10px;
-          transition: all 450ms ease-in-out;
+          transition: all 1s ease-in-out;
           span{
             font-weight: 700;
             font-size: 15px;
@@ -107,7 +106,6 @@
           margin-right: -50px;
           width: 15%;
           height: 70px;
-          background-color: aqua;
           border-top-right-radius: 18px;
           border-bottom-right-radius: 18px;
           i{
@@ -118,12 +116,12 @@
             background: #fff;
             padding: 3.5px 4.5px;
             border-radius: 100%;
-            color: #99E2D0;
+            color: $tertiaire;
           }
         }
       }
       &:hover .eat__animation{
-        background: #99E2D0;
+        background: $tertiaire;
         opacity: 1;
         margin: 0;
         transition: all 0.8s;
@@ -133,7 +131,7 @@
       }
       &:hover .eat__prise{
         width: 5%;
-        transition: all 500ms ease-in-out;
+        transition: all 400ms ease-in-out;
       }
     }
   }
