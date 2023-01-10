@@ -193,19 +193,23 @@ ul li a {
   padding-right: 20px;
 }
 
-.eat {
+.global {
+  flex-direction: column;
+  display: flex;
+}
+.global .eat {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 18px;
   margin-bottom: 45px;
 }
-.eat .eat__sous-title {
+.global .eat .eat__sous-title {
   text-transform: uppercase;
   color: rgba(70, 69, 69, 0.808);
   padding-left: 15px;
 }
-.eat .eat__sous-title::after {
+.global .eat .eat__sous-title::after {
   content: "";
   position: absolute;
   display: block;
@@ -213,7 +217,7 @@ ul li a {
   height: 2px;
   background: #99E2D0;
 }
-.eat .eat__container {
+.global .eat .eat__container {
   text-align: center;
   position: relative;
   box-shadow: 0px 0px 7px -2px #000000;
@@ -226,7 +230,7 @@ ul li a {
   overflow: hidden;
   color: #000;
 }
-.eat .eat__container:nth-child(1) {
+.global .eat .eat__container:nth-child(1) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -238,7 +242,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(2) {
+.global .eat .eat__container:nth-child(2) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -250,7 +254,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(3) {
+.global .eat .eat__container:nth-child(3) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -262,7 +266,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(4) {
+.global .eat .eat__container:nth-child(4) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -274,7 +278,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(5) {
+.global .eat .eat__container:nth-child(5) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -286,7 +290,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(6) {
+.global .eat .eat__container:nth-child(6) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -298,7 +302,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(7) {
+.global .eat .eat__container:nth-child(7) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -310,7 +314,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(8) {
+.global .eat .eat__container:nth-child(8) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -322,7 +326,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(9) {
+.global .eat .eat__container:nth-child(9) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -334,7 +338,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(10) {
+.global .eat .eat__container:nth-child(10) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -346,7 +350,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(11) {
+.global .eat .eat__container:nth-child(11) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -358,7 +362,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(12) {
+.global .eat .eat__container:nth-child(12) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -370,7 +374,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(13) {
+.global .eat .eat__container:nth-child(13) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -382,7 +386,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(14) {
+.global .eat .eat__container:nth-child(14) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -394,7 +398,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(15) {
+.global .eat .eat__container:nth-child(15) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -406,7 +410,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(16) {
+.global .eat .eat__container:nth-child(16) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -418,7 +422,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(17) {
+.global .eat .eat__container:nth-child(17) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -430,7 +434,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(18) {
+.global .eat .eat__container:nth-child(18) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -442,7 +446,7 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container:nth-child(19) {
+.global .eat .eat__container:nth-child(19) {
   opacity: 0;
   transform: translateY(-30px);
   animation-name: fade-in;
@@ -454,25 +458,25 @@ ul li a {
   animation-fill-mode: forwards;
   animation-play-state: running;
 }
-.eat .eat__container .eat__cards {
+.global .eat .eat__container .eat__cards {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.eat .eat__container .eat__cards .eat__title {
+.global .eat .eat__container .eat__cards .eat__title {
   width: 80%;
   padding: 10px 5px;
   line-height: 25px;
   padding-left: 15px;
 }
-.eat .eat__container .eat__cards .eat__title h2 {
+.global .eat .eat__container .eat__cards .eat__title h2 {
   font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
   text-align: left;
 }
-.eat .eat__container .eat__cards .eat__title h4 {
+.global .eat .eat__container .eat__cards .eat__title h4 {
   font-size: 16px;
   font-weight: 400;
   text-overflow: ellipsis;
@@ -480,7 +484,7 @@ ul li a {
   white-space: nowrap;
   text-align: left;
 }
-.eat .eat__container .eat__cards .eat__prise {
+.global .eat .eat__container .eat__cards .eat__prise {
   text-align: right;
   width: 20%;
   display: flex;
@@ -490,14 +494,14 @@ ul li a {
   margin-bottom: 10px;
   transition: all 1s ease-in-out;
 }
-.eat .eat__container .eat__cards .eat__prise span {
+.global .eat .eat__container .eat__cards .eat__prise span {
   font-weight: 700;
   font-size: 15px;
   margin-left: auto;
   margin-top: -20px;
   padding-right: 8px;
 }
-.eat .eat__container .eat__cards .eat__animation {
+.global .eat .eat__container .eat__cards .eat__animation {
   opacity: 0;
   transition: all 0.8s;
   position: absolute;
@@ -508,7 +512,7 @@ ul li a {
   border-top-right-radius: 18px;
   border-bottom-right-radius: 18px;
 }
-.eat .eat__container .eat__cards .eat__animation i {
+.global .eat .eat__container .eat__cards .eat__animation i {
   position: relative;
   transition: rotate 900ms;
   top: 25px;
@@ -518,16 +522,16 @@ ul li a {
   border-radius: 100%;
   color: #99E2D0;
 }
-.eat .eat__container:hover .eat__animation {
+.global .eat .eat__container:hover .eat__animation {
   background: #99E2D0;
   opacity: 1;
   margin: 0;
   transition: all 0.8s;
 }
-.eat .eat__container:hover .eat__animation i {
+.global .eat .eat__container:hover .eat__animation i {
   rotate: -360deg;
 }
-.eat .eat__container:hover .eat__prise {
+.global .eat .eat__container:hover .eat__prise {
   width: 5%;
   transition: all 400ms ease-in-out;
 }
@@ -550,12 +554,16 @@ button {
 }
 @media only screen and (min-width: 992px) {
   .top-page {
-    margin: 0 25%;
+    margin: 0 1.5%;
   }
-  .eat {
-    padding: 0 24%;
+  .global {
+    display: flex;
+    flex-direction: row;
   }
-  .eat .eat__sous-title {
+  .global .eat {
+    padding: 0;
+  }
+  .global .eat .eat__sous-title {
     margin-left: 30px;
   }
 }
