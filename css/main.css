@@ -529,7 +529,7 @@ ul li a {
   transition: all 0.8s;
 }
 .global .eat .eat__container:hover .eat__animation i {
-  rotate: -360deg;
+  transform: rotate(-360deg);
 }
 .global .eat .eat__container:hover .eat__prise {
   width: 5%;
@@ -557,10 +557,13 @@ button {
     margin: 0 1.5%;
   }
   .global {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
   }
   .global .eat {
+    width: 30%;
     padding: 0;
   }
   .global .eat .eat__sous-title {
@@ -823,6 +826,75 @@ figcaption .fa-heart {
 
 .position {
   text-align: center;
+}
+
+.loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgb(147, 86, 220);
+  background: linear-gradient(204deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 50%, rgb(153, 226, 208) 100%);
+  inset: 0;
+  z-index: 1;
+  animation: disappear 3s step-end;
+  animation-fill-mode: forwards;
+}
+.loader .loader_center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.loader .loader_center span {
+  color: rgba(255, 255, 255, 0.2901960784);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  animation: text 3s ease-in-out infinite;
+}
+.loader .loader_center .ring {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+.loader .loader_center .ring::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #99E2D0;
+  }
+  50% {
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #99E2D0;
+  }
+  100% {
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #99E2D0;
+  }
+}
+@keyframes text {
+  50% {
+    color: #fff;
+  }
+}
+@keyframes disappear {
+  to {
+    opacity: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
