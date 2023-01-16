@@ -36,7 +36,7 @@
       .eat__sous-title{
         text-transform: uppercase;
         color: rgba(70, 69, 69, 0.808);
-        padding-left: 15px;
+        padding-left: 32px;
         &::after{
           content: "";
           position: absolute;
@@ -68,7 +68,7 @@
             padding: 10px 5px;
             line-height: 25px;
             padding-left: 15px;
-            h2{
+            h3{
               font-size: 18px;
               text-overflow: ellipsis;
               overflow: hidden;
@@ -102,11 +102,11 @@
             }
           }
           .eat__animation{
-            opacity: 0;
+            opacity: 1;
             transition: all 0.8s;
             position: absolute;
             right: 0;
-            margin-right: -50px;
+            margin-right: -60px;
             width: 15%;
             height: 70px;
             border-top-right-radius: 18px;
@@ -130,7 +130,7 @@
           transition: all 0.8s;
         }
         &:hover .eat__animation i{
-          transform: rotate(-360deg);
+           
         }
         &:hover .eat__prise{
           width: 5%;
@@ -152,7 +152,7 @@
   .eat{
     padding: 0 100px;
     .eat__sous-title{
-      margin-left: 20px;
+      padding-left: 20px;
     }
   }
 }
@@ -171,7 +171,7 @@
       width: 30%;
       padding: 0;
       .eat__sous-title{
-        margin-left: 30px;
+        padding-left: 30px;
       }
     }
   }

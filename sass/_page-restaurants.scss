@@ -9,14 +9,18 @@
 .button_commande{
   border: none;
   border-radius: 50px;
-  background: linear-gradient(356deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+  background: linear-gradient(356deg, $primaire 10%, $secondaire 100%);
   box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.2);
   font-size: 18px;
   padding: 0 50px;
   height: 55px;
   color: white;
   margin-bottom: 50px;
-  cursor: pointer;
+  transition: all 200ms ease-out;
+  &:hover{
+    filter: brightness(1.1);
+    box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.4);
+  }
 }
 .position{
   text-align: center;

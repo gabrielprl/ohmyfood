@@ -110,13 +110,17 @@ a {
   text-transform: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 footer {
   background: #3a3939;
   padding: 20px 25px;
   width: 100%;
   height: 220px;
 }
-footer h3 {
+footer h2 {
   text-align: left;
   color: white;
   font-family: Shrikhand;
@@ -144,7 +148,7 @@ ul li a {
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
   }
-  footer h3 {
+  footer h2 {
     text-align: center;
   }
   ul li {
@@ -207,7 +211,7 @@ ul li a {
 .global .eat .eat__sous-title {
   text-transform: uppercase;
   color: rgba(70, 69, 69, 0.808);
-  padding-left: 15px;
+  padding-left: 32px;
 }
 .global .eat .eat__sous-title::after {
   content: "";
@@ -469,7 +473,7 @@ ul li a {
   line-height: 25px;
   padding-left: 15px;
 }
-.global .eat .eat__container .eat__cards .eat__title h2 {
+.global .eat .eat__container .eat__cards .eat__title h3 {
   font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -502,11 +506,11 @@ ul li a {
   padding-right: 8px;
 }
 .global .eat .eat__container .eat__cards .eat__animation {
-  opacity: 0;
+  opacity: 1;
   transition: all 0.8s;
   position: absolute;
   right: 0;
-  margin-right: -50px;
+  margin-right: -60px;
   width: 15%;
   height: 70px;
   border-top-right-radius: 18px;
@@ -528,9 +532,6 @@ ul li a {
   margin: 0;
   transition: all 0.8s;
 }
-.global .eat .eat__container:hover .eat__animation i {
-  transform: rotate(-360deg);
-}
 .global .eat .eat__container:hover .eat__prise {
   width: 5%;
   transition: all 400ms ease-in-out;
@@ -549,7 +550,7 @@ button {
     padding: 0 100px;
   }
   .eat .eat__sous-title {
-    margin-left: 20px;
+    padding-left: 20px;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -567,7 +568,7 @@ button {
     padding: 0;
   }
   .global .eat .eat__sous-title {
-    margin-left: 30px;
+    padding-left: 30px;
   }
 }
 /*First Mobile */
@@ -584,6 +585,15 @@ button {
   background: rgba(177, 177, 177, 0.1);
   box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.04);
 }
+.top_infos .localisation input {
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 20px;
+  border: none;
+  outline: none;
+  background: #F0F0F0;
+  width: 180px;
+}
 .top_infos .title_one {
   text-align: center;
   font-size: 28px;
@@ -591,17 +601,12 @@ button {
   padding: 0 50px;
   width: 100%;
 }
-.top_infos p {
-  font-size: 20px;
-  font-weight: 500;
-  margin-left: 15px;
-}
 .top_infos .position {
   text-align: center;
   margin-top: 50px;
 }
 
-.desciption {
+.description {
   width: 100%;
   padding: 0 35px;
   text-align: center;
@@ -613,15 +618,18 @@ button {
 .button_explore {
   border: none;
   border-radius: 50px;
-  background: rgb(147, 86, 220);
-  background: linear-gradient(356deg, rgb(147, 86, 220) 10%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(356deg, #9356DC 10%, #FF79DA 100%);
   box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.2);
   font-size: 20px;
   padding: 0 20px;
   height: 60px;
   color: white;
   margin-bottom: 50px;
-  cursor: pointer;
+  transition: all 200ms ease-out;
+}
+.button_explore:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.4);
 }
 
 .title_common {
@@ -655,6 +663,7 @@ button {
   gap: 18px;
   box-shadow: 0px 0px 7px -3px #000000;
   background: white;
+  cursor: pointer;
 }
 .same:hover {
   background-color: rgba(146, 86, 220, 0.1529411765);
@@ -737,7 +746,7 @@ figcaption .fa-heart {
   .localisation {
     height: 65px;
   }
-  .desciption {
+  .description {
     width: 500px;
     margin: 0 auto;
   }
@@ -814,14 +823,18 @@ figcaption .fa-heart {
 .button_commande {
   border: none;
   border-radius: 50px;
-  background: linear-gradient(356deg, rgb(147, 86, 220) 10%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(356deg, #9356DC 10%, #FF79DA 100%);
   box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.2);
   font-size: 18px;
   padding: 0 50px;
   height: 55px;
   color: white;
   margin-bottom: 50px;
-  cursor: pointer;
+  transition: all 200ms ease-out;
+}
+.button_commande:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0 5px 3px rgba(50, 50, 50, 0.4);
 }
 
 .position {
