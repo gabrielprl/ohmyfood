@@ -68,6 +68,7 @@
             padding: 10px 5px;
             line-height: 25px;
             padding-left: 15px;
+            transition: all 400ms ease-in-out;
             h3{
               font-size: 18px;
               text-overflow: ellipsis;
@@ -129,12 +130,18 @@
           margin: 0;
           transition: all 0.8s;
         }
-        &:hover .eat__animation i{
-           
-        }
         &:hover .eat__prise{
-          width: 5%;
+          width: 10%;
           transition: all 400ms ease-in-out;
+        }
+        &:hover .eat__title{
+          transition: all 400ms ease-in-out;
+          width: 70%;
+        }
+        .check{
+          &:hover{
+            transform: rotate(360deg);
+          }
         }
       }
     }

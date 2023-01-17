@@ -23,8 +23,8 @@ i.fa-coeur-custom{
   left: -49.5px;
 }
 i.fa-coeur-custom:hover{
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-color: $primaire;
+  background-image: linear-gradient(45deg, $primaire, $secondaire);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -40,8 +40,8 @@ i.fa-heart-custom{
   left: 40px;
 }
 i.fa-heart-custom:hover{
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-color: $primaire;
+  background-image: linear-gradient(45deg, $primaire, $secondaire);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -75,8 +75,8 @@ i.fa-heart-custom:hover{
         left: 40px;
       }
       i.fa-heart-custom:hover{
-        background-color: #9356dc;
-        background-image: linear-gradient(45deg, #9356dc, #ff79da);
+        background-color: $primaire;
+        background-image: linear-gradient(45deg, $primaire, $secondaire);
         background-size: 100%;
         -webkit-background-clip: text;
         -moz-background-clip: text;

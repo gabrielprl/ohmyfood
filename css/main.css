@@ -24,8 +24,8 @@ i.fa-coeur-custom {
 }
 
 i.fa-coeur-custom:hover {
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-color: #9356DC;
+  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -42,8 +42,8 @@ i.fa-heart-custom {
 }
 
 i.fa-heart-custom:hover {
-  background-color: #9356dc;
-  background-image: linear-gradient(45deg, #9356dc, #ff79da);
+  background-color: #9356DC;
+  background-image: linear-gradient(45deg, #9356DC, #FF79DA);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -60,8 +60,8 @@ i.fa-heart-custom:hover {
     left: 40px;
   }
   i.fa-heart-custom:hover {
-    background-color: #9356dc;
-    background-image: linear-gradient(45deg, #9356dc, #ff79da);
+    background-color: #9356DC;
+    background-image: linear-gradient(45deg, #9356DC, #FF79DA);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -472,6 +472,7 @@ ul li a {
   padding: 10px 5px;
   line-height: 25px;
   padding-left: 15px;
+  transition: all 400ms ease-in-out;
 }
 .global .eat .eat__container .eat__cards .eat__title h3 {
   font-size: 18px;
@@ -533,8 +534,15 @@ ul li a {
   transition: all 0.8s;
 }
 .global .eat .eat__container:hover .eat__prise {
-  width: 5%;
+  width: 10%;
   transition: all 400ms ease-in-out;
+}
+.global .eat .eat__container:hover .eat__title {
+  transition: all 400ms ease-in-out;
+  width: 70%;
+}
+.global .eat .eat__container .check:hover {
+  transform: rotate(360deg);
 }
 
 button {
@@ -664,6 +672,9 @@ button {
   box-shadow: 0px 0px 7px -3px #000000;
   background: white;
   cursor: pointer;
+}
+.same .fa-color {
+  color: grey;
 }
 .same:hover {
   background-color: rgba(146, 86, 220, 0.1529411765);

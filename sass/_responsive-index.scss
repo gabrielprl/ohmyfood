@@ -90,6 +90,9 @@
   box-shadow: 0px 0px 7px -3px #000000;
   background: white;
   cursor: pointer;
+  .fa-color{
+    color: grey;
+  }
   &:hover{
     background-color: #9256dc27;
     .fa-color{
