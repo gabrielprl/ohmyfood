@@ -53,6 +53,14 @@ i.fa-heart-custom:hover {
   opacity: 1;
 }
 
+@keyframes rotate-360 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 992px) {
   i.fa-heart-custom {
     opacity: 0;
@@ -232,6 +240,7 @@ ul li a {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+  cursor: pointer;
   color: #000;
 }
 .global .eat .eat__container:nth-child(1) {
@@ -519,7 +528,6 @@ ul li a {
 }
 .global .eat .eat__container .eat__cards .eat__animation i {
   position: relative;
-  transition: rotate 900ms;
   top: 25px;
   font-size: 15px;
   background: #fff;
@@ -541,8 +549,9 @@ ul li a {
   transition: all 400ms ease-in-out;
   width: 70%;
 }
-.global .eat .eat__container .check:hover {
-  transform: rotate(360deg);
+.global .eat .eat__container:hover .fa-check {
+  animation-duration: 800ms;
+  animation-name: rotate-360;
 }
 
 button {

@@ -57,6 +57,7 @@
         display: flex;
         flex-direction: column;
         overflow: hidden;
+        cursor: pointer;
         color: #000;
         @include anim;
         .eat__cards{
@@ -114,7 +115,6 @@
             border-bottom-right-radius: 18px;
             i{
               position: relative;
-              transition: rotate 900ms;
               top: 25px;
               font-size: 15px;
               background: #fff;
@@ -138,10 +138,9 @@
           transition: all 400ms ease-in-out;
           width: 70%;
         }
-        .check{
-          &:hover{
-            transform: rotate(360deg);
-          }
+        &:hover .fa-check{
+          animation-duration: 800ms;
+          animation-name: rotate-360;
         }
       }
     }

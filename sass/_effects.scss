@@ -68,6 +68,15 @@ i.fa-heart-custom:hover{
   }
 }
 
+@keyframes rotate-360 {
+  0% {
+            transform: rotate(0);
+  }
+  100% {
+            transform: rotate(360deg);
+  }
+}
+
     @media screen and (max-width: 992px){
       i.fa-heart-custom{
         opacity: 0;
